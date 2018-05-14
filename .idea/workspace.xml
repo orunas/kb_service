@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="87795e73-9215-4e03-b3eb-eda6f4179d03" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="airport_data.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/kb_service/airport_data.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj" />
+        <option value="$PROJECT_DIR$/src/kb_service/airport_file.clj" />
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/src/kb_service/core.clj" />
+        <option value="$PROJECT_DIR$/src/kb_service/airport_data.clj" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kb-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kb-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kb-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kb-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kb-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kb-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="kb_service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git\clojure\kb-service\src\kb_service" />
+    </key>
+  </component>
+  <component name="ReplState" timestamp="1525986433596">{:repl-history {:ide [], :local [{:command &quot;(macroexpand '     (doto\n                     (ModelFactory/createDefaultModel)\n                     (.read data-input nil \&quot;TTL\&quot;)\n                     (.write sr \&quot;TTL\&quot;)\n                     (query-model query)\n\n                     ))&quot;, :offset 234, :ns &quot;user&quot;} {:command &quot;(macroexpand '   (with-open [sr (StringWriter.)]\n                   (let*\n                     [G__1653 (ModelFactory/createDefaultModel)]\n                     (.read G__1653 data-input nil \&quot;TTL\&quot;)\n                     (.write G__1653 sr \&quot;TTL\&quot;)\n                     (query-model G__1653 query))\n                   ;(doto        (ModelFactory/createDefaultModel)        (.read data-input nil \&quot;TTL\&quot;)        (.write sr \&quot;TTL\&quot;)        (query-model query))\n                   (.toString sr)\n                   ))&quot;, :offset 505, :ns &quot;user&quot;} {:command &quot;(macroexpand '(clojure.core/with-open\n                []\n                (let*\n                  [G__1653 (ModelFactory/createDefaultModel)]\n                  (.read G__1653 data-input nil \&quot;TTL\&quot;)\n                  (.write G__1653 sr \&quot;TTL\&quot;)\n                  (query-model G__1653 query))\n                (.toString sr)))&quot;, :offset 319, :ns &quot;user&quot;} {:command &quot;(load-jena-model-from-str-and-out \&quot;&lt;http://example.org/#spiderman&gt; &lt;http://www.perceive.net/schemas/relationship/enemyOf&gt; &lt;http://example.org/#green-goblin&gt; .\&quot; \&quot;ASK {?x &lt;http://www.perceive.net/schemas/relationship/enemyOf&gt; &lt;http://example.org/#green-goblisn&gt;}\&quot; )&quot;, :offset 263, :ns &quot;ssfalse&quot;} {:command &quot;(load-jena-model-from-str-and-out \&quot;&lt;http://example.org/#spiderman&gt; &lt;http://www.perceive.net/schemas/relationship/enemyOf&gt; &lt;http://example.org/#green-goblin&gt; .\&quot; \&quot;ASK {?x &lt;http://www.perceive.net/schemas/relationship/enemyOf&gt; &lt;http://example.org/#green-goblin&gt;}\&quot; )&quot;, :offset 262, :ns &quot;false&quot;} {:command &quot;(comp ref vec)&quot;, :offset 14, :ns &quot;true&quot;} {:command &quot;(* 2 3)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(range 10)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(ref (range 10))&quot;, :offset 16, :ns &quot;user&quot;} {:command &quot;(vec (range 10))&quot;, :offset 16, :ns &quot;user&quot;} {:command &quot;(ref (vec (range 10)))&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(def names (ref []))&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(defn add-name [name]\n  (dosync\n    (alter names conj name)))&quot;, :offset 61, :ns &quot;user&quot;} {:command &quot;(add-name \&quot;zack\&quot;)&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(print names)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(print (str names))&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(print @names)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(:next '(1 2))&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(:next [1 2])&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(doseq [i (range 10)] (print i) )&quot;, :offset 33, :ns &quot;user&quot;} {:command &quot;(dec 1000)&quot;, :offset 10, :ns &quot;user&quot;} {:command &quot;(range (dec 100))&quot;, :offset 17, :ns &quot;user&quot;} {:command &quot;(def hd3 (fn [next _] (agent {:next next}))\n  (agent {:report-queue 1}) (range (dec m)))&quot;, :offset 88, :ns &quot;user&quot;} {:command &quot;(def hd3 (reduce (fn [next _] (agent {:next next}))\n           (agent {:report-queue 1})) (range (dec m)))&quot;, :offset 106, :ns &quot;user&quot;} {:command &quot;(reduce (fn [next _] (agent {:next next}))\n           (agent {:report-queue 1})) (range (dec m))&quot;, :offset 96, :ns &quot;user&quot;} {:command &quot;(reduce (fn [next _] (agent {:next next}))\n           (agent {:report-queue 1})) (range 10)&quot;, :offset 91, :ns &quot;user&quot;} {:command &quot;(reduce (fn [next _] (agent {:next next}))\n           (agent {:report-queue \&quot;s\&quot;})) (range 10)&quot;, :offset 93, :ns &quot;user&quot;} {:command &quot;(agent {:s 1})&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(def my-agent (agent 100))&quot;, :offset 26, :ns &quot;user&quot;} {:command &quot;@my-agent&quot;, :offset 9, :ns &quot;user&quot;} {:command &quot;(send my-agent - 50)&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;my-agent&quot;, :offset 8, :ns &quot;user&quot;} {:command &quot;(defn fib [n]\n  (if (&lt;= n 1)\n    n\n    (+ (fib (dec n)) (fib (- n 2)))))&quot;, :offset 72, :ns &quot;user&quot;} {:command &quot;(fib 35)&quot;, :offset 8, :ns &quot;user&quot;} {:command &quot;(fib 1)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(fib 2)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(fib 3)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(fib 6\n     )&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(fib 7\n     )&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(fib 5\n        )&quot;, :offset 16, :ns &quot;user&quot;} {:command &quot;(fib 8)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;(fib 9)&quot;, :offset 7, :ns &quot;user&quot;} {:command &quot;@listener&quot;, :offset 9, :ns &quot;user&quot;} {:command &quot;(defonce events (atom clojure.lang.PersistentQueue/EMPTY))&quot;, :offset 58, :ns &quot;user&quot;} {:command &quot;(peek events)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(conj events \&quot;sss\&quot;)&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(conj @events \&quot;sss\&quot;)&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(swap! events conj \&quot;1\&quot;)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(swap! events conj \&quot;2\&quot;)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(pop @events)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(peek (pop @events))&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(seq @events)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(slurp \&quot;eee\&quot;)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(peek-event\n  )&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(type \&quot;sss\&quot;)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(String (type \&quot;sss\&quot;))&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(= String (type \&quot;sss\&quot;))&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(type @events)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(push-event \&quot;jsjsjs\&quot;)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(push-event \&quot;kitas\&quot;)&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(peek @events)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(peek-event )&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(push-event \&quot;pirmas\&quot;)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(push-event \&quot;antras\&quot;)&quot;, :offset 21, :ns &quot;user&quot;} {:command &quot;(push-event \&quot;trecias\&quot;)&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(peek-events)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(get-events)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(peek-event)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(defn peek-event-w [request]\n  (peek-event)\n  )&quot;, :offset 47, :ns &quot;kb-service.core&quot;} {:command &quot;(def ai nil)&quot;, :offset 12, :ns &quot;user&quot;} {:command &quot;(let [ai2 :or {ai2 \&quot;2\&quot;} ai] ai2)&quot;, :offset 32, :ns &quot;user&quot;} {:command &quot;(let [ai2 :or  \&quot;2\&quot; ai] ai2)&quot;, :offset 27, :ns &quot;user&quot;} {:command &quot;(if ai 2)&quot;, :offset 9, :ns &quot;user&quot;} {:command &quot;(if ai 2 2)&quot;, :offset 11, :ns &quot;user&quot;} {:command &quot;(def s1 200\n  )&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;(def r1 {:status 200})&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(def r12 nil)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(assoc r1 :status (if r12 r12 500))&quot;, :offset 35, :ns &quot;user&quot;} {:command &quot;(use '[kb-service])&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(use '[kb-service.core])&quot;, :offset 24, :ns &quot;user&quot;} {:command &quot;(slurp \&quot;C:/Users/Arunas/Dropbox/darbas/travel planning/airports.dat\&quot;)&quot;, :offset 69, :ns &quot;user&quot;} {:command &quot;@airport-data&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(stop-server\n  )&quot;, :offset 16, :ns &quot;user&quot;} {:command &quot;(@airport-data :VNO)&quot;, :offset 20, :ns &quot;user&quot;} {:command &quot;(load-flights :VNO)&quot;, :offset 19, :ns &quot;user&quot;} {:command &quot;(require '[kb-service.airport-data :as air])&quot;, :offset 44, :ns &quot;user&quot;} {:command &quot;(air/load-flights :VNO)&quot;, :offset 23, :ns &quot;user&quot;} {:command &quot;(pst)&quot;, :offset 5, :ns &quot;user&quot;} {:command &quot;(number? \&quot;123\&quot;)&quot;, :offset 15, :ns &quot;user&quot;} {:command &quot;((air/load-flights) :VNO)&quot;, :offset 25, :ns &quot;user&quot;} {:command &quot;(use 'kb-service.airport-data)&quot;, :offset 30, :ns &quot;user&quot;} {:command &quot;(load-flights)&quot;, :offset 14, :ns &quot;user&quot;} {:command &quot;(get-airport 'VNO)&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(stop-server)&quot;, :offset 13, :ns &quot;user&quot;} {:command &quot;(get-airport 'EIN)&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(get-airport 'LUZ)&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(reset! airport-data (load-flights))&quot;, :offset 36, :ns &quot;user&quot;} {:command &quot;(get-airport 'MLH)&quot;, :offset 18, :ns &quot;user&quot;} {:command &quot;(reset! airport-data (air/load-flights))&quot;, :offset 40, :ns &quot;user&quot;} {:command &quot;(use 'kb-service.core)&quot;, :offset 22, :ns &quot;user&quot;} {:command &quot;(-main)&quot;, :offset 7, :ns &quot;user&quot;}], :remote []}}</component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Local REPL" type="ClojureREPL" factoryName="Local">
+      <module name="kb-service" />
+      <setting name="replType" value="1" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local">
+      <setting name="replType" value="1" />
+      <module name="" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ClojureScriptRunConfiguration" factoryName="Clojure Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="" />
+      <setting name="repl" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="kb-service" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87795e73-9215-4e03-b3eb-eda6f4179d03" name="Default" comment="" />
+      <created>1513243550151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1513243550151</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502445" side_tool="true" visible="true" weight="0.1679473" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="REPL" order="5" side_tool="true" weight="0.28035715" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="right" id="Leiningen" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14880952" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49755502" weight="0.16797313" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Statistic" order="9" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info anchor="right" id="Properties" order="7" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="39" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/kb_service/airport_data.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="89" lean-forward="true" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2992">
+          <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/airport_data.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="2" selection-start-line="164" selection-start-column="2" selection-end-line="164" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2380">
+          <caret line="140" column="45" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/airport_data.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="149" column="62" lean-forward="true" selection-start-line="149" selection-start-column="62" selection-end-line="149" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="150" column="26" lean-forward="true" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/kb_service/core_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.6.0/jena-core-3.6.0.jar!/org/apache/jena/rdf/model/impl/ModelCom.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5440">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="66" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.6.0/jena-arq-3.6.0.jar!/org/apache/jena/query/QueryFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.6.0/jena-core-3.6.0.jar!/org/apache/jena/rdf/model/impl/ModelCom.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5440">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.8.0/clojure-1.8.0.jar!/clojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="1633" column="10" selection-start-line="1633" selection-start-column="10" selection-end-line="1633" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ring/ring-core/1.2.1/ring-core-1.2.1.jar!/ring/util/request.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-core/3.6.0/jena-core-3.6.0.jar!/org/apache/jena/rdf/model/impl/ModelCom.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3689">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/jena/jena-arq/3.6.0/jena-arq-3.6.0.jar!/org/apache/jena/query/QueryFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/1.1.5/compojure-1.1.5.jar!/compojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="112" column="10" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/kb_service/core_test.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="176" column="30" selection-start-line="176" selection-start-column="30" selection-end-line="176" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kb_service/airport_data.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
