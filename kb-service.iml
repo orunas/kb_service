@@ -13,6 +13,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Leiningen: cheshire:5.5.0" level="project" />
     <orderEntry type="library" name="Leiningen: clj-stacktrace:0.2.5" level="project" />
     <orderEntry type="library" name="Leiningen: clj-time:0.4.4" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
@@ -21,6 +22,8 @@
     <orderEntry type="library" name="Leiningen: com.fasterxml.jackson.core/jackson-annotations:2.9.0" level="project" />
     <orderEntry type="library" name="Leiningen: com.fasterxml.jackson.core/jackson-core:2.9.0" level="project" />
     <orderEntry type="library" name="Leiningen: com.fasterxml.jackson.core/jackson-databind:2.9.0" level="project" />
+    <orderEntry type="library" name="Leiningen: com.fasterxml.jackson.dataformat/jackson-dataformat-cbor:2.5.3" level="project" />
+    <orderEntry type="library" name="Leiningen: com.fasterxml.jackson.dataformat/jackson-dataformat-smile:2.5.3" level="project" />
     <orderEntry type="library" name="Leiningen: com.github.andrewoma.dexx/collection:0.7" level="project" />
     <orderEntry type="library" name="Leiningen: com.github.jsonld-java/jsonld-java:0.11.1" level="project" />
     <orderEntry type="library" name="Leiningen: commons-cli:1.4" level="project" />
@@ -57,6 +60,8 @@
     <orderEntry type="library" name="Leiningen: ring/ring-codec:1.0.0" level="project" />
     <orderEntry type="library" name="Leiningen: ring/ring-core:1.2.1" level="project" />
     <orderEntry type="library" name="Leiningen: ring/ring-devel:1.2.1" level="project" />
+    <orderEntry type="library" name="Leiningen: ring/ring-json:0.4.0" level="project" />
+    <orderEntry type="library" name="Leiningen: tigris:0.1.1" level="project" />
     <orderEntry type="library" name="Leiningen: xerces/xercesImpl:2.11.0" level="project" />
     <orderEntry type="library" name="Leiningen: xml-apis:1.4.01" level="project" />
   </component>

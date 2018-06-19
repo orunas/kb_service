@@ -1,4 +1,5 @@
 (ns kb-service.core
+  (:gen-class)
   (:use [org.httpkit.server :only [run-server]])
   (:require [ring.middleware.reload :as reload]
             [compojure.route :as cr]
@@ -130,8 +131,7 @@
      :headers {"Context-Type" "text/turtle; charset=utf-8"}}
     ;(assoc resp :status 200)
  ;{:status  status :headers {"Content-Type" "text/turtle; charset=utf-8"}      :body    res}
-    )
-  )
+    ))
 
 (defonce airport-data (atom {}))
 
@@ -162,6 +162,7 @@
     (reset! server nil)))
 
 (defn -main [& args]
+  (println "starting")
   (reset! airport-data (air/load-flights))
   ;; The #' is useful when you want to hot-reload code
   ;; You may want to take a look: https://github.com/clojure/tools.namespace

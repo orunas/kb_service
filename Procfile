@@ -1,0 +1,1 @@
+lein run -m my.project.namespace
