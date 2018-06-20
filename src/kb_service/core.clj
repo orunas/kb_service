@@ -1,5 +1,4 @@
 (ns kb-service.core
-  (:gen-class)
   (:use [org.httpkit.server :only [run-server]])
   (:require [ring.middleware.reload :as reload]
             [compojure.route :as cr]
