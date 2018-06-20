@@ -17,5 +17,7 @@
                  [org.clojure/data.json "0.2.6"]
                  [ring/ring-json "0.4.0"]
                  ]
+  :uberjar-name "kb-service-standalone.jar"
   :main kb-service.core
-  :aot [kb-service.core])
+  :aot [kb-service.core]
+  )
