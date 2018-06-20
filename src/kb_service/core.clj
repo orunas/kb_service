@@ -119,7 +119,7 @@
   ;  (println "Request received")
   ;(print req)
   ;(println "parsed body")
-  (let [b (slurp (req :body) )
+  (let [b (slurp (req :body))
         options {:headers {"Content-Type" "text/turtle; charset=utf-8"}
                  :body b}
         url "http://localhost:3030/Test2/data"
