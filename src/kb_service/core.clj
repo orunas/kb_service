@@ -7,6 +7,7 @@
             [org.httpkit.client :as http]
             [kb-service.airport-data :as air]
             [clojure.data.json :as json]
+            [environ.core :refer [env]]
     ;[compojure.handler :as ch]
             )
   (import [org.apache.jena.rdf.model Model ModelFactory ResourceFactory]
@@ -161,15 +162,18 @@
     (@server :timeout 100)
     (reset! server nil)))
 
-(defn -main [& args]
-  (println "starting")
-  (reset! airport-data (air/load-flights))
-  ;; The #' is useful when you want to hot-reload code
-  ;; You may want to take a look: https://github.com/clojure/tools.namespace
-  ;; and http://http-kit.org/migration.html#reload
+(defn -main [& [port]]
+  (let [port (Integer. (or port (env :port) 8087))]
+    (println "starting")
+    ; (reset! airport-data (air/load-flights))
+    ;; The #' is useful when you want to hot-reload code
+    ;; You may want to take a look: https://github.com/clojure/tools.namespace
+    ;; and http://http-kit.org/migration.html#reload
 
-  (let [handler (reload/wrap-reload #'all-routes)]
-    (reset! server (run-server handler {:port 8087}))))
+    (let [handler (reload/wrap-reload #'all-routes)]
+      (run-server handler {:port port})
+      ;(reset! server (run-server handler {:port port :join? false}))
+      )))
 
 
 (comment
