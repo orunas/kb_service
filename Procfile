@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -jar target/kb-service-standalone.jar
+web: java $JVM_OPTS -cp target/kb-service-standalone.jar clojure.main -m kb-service.core

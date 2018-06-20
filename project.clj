@@ -20,6 +20,4 @@
                  [environ "1.0.0"]
                  ]
   :uberjar-name "kb-service-standalone.jar"
-  :main kb-service.core
-  :aot [kb-service.core]
   )
