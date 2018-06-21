@@ -1,10 +1,12 @@
 (ns kb-service.core
   (:use [org.httpkit.server :only [run-server]])
   (:require [ring.middleware.reload :as reload]
+            [clojure.pprint]
             [compojure.route :as cr]
             [compojure.core :as cc]
             [org.httpkit.client :as http]
             [kb-service.airport-data :as air]
+            [kb-service.jena :as j]
             [clojure.data.json :as json]
             [environ.core :refer [env]]
     ;[compojure.handler :as ch]
@@ -17,43 +19,13 @@
 ; it should be list of string
 (defonce listener (atom nil))
 
+(def config {                                               ;:url-kb "http://localhost:3030/Test2/data"
+             :url-kb "http://ec2-35-178-111-83.eu-west-2.compute.amazonaws.com:10035/repositories/Flights/statements"
+             ;:kb-authorization nil
+             :kb-authorization "Basic ZWE6am9wbDE="
+             })
+
 (defonce events (atom clojure.lang.PersistentQueue/EMPTY))
-
-(comment defn load-jena-model-and-out
-  ([data-input] (load-jena-model-and-out data-input @listener))
-  ([data-input query]
-   (with-open [sr (StringWriter.)]
-     (let*
-       [m (ModelFactory/createDefaultModel)]
-       (.read m data-input nil "TTL")
-       (.write m sr "TTL")
-       (query-model m query))
-     ;(doto        (ModelFactory/createDefaultModel)        (.read data-input nil "TTL")        (.write sr "TTL")        (query-model query))
-     (.toString sr))))
-
-(comment defn load-jena-model-and-out2
-  [data-input query]
-  (let*
-   [sr (StringWriter.)]
-   (try
-     (do
-       (let*
-         [model (ModelFactory/createDefaultModel)]
-         (.read model data-input nil "TTL")
-         (query-model model query)
-         (.write model sr "TTL")
-         (.toString sr))
-       )
-     (finally (.close sr))
-     )))
-
-; Query query = QueryFactory.create(queryString) ;
-;QueryExecution qexec = QueryExecutionFactory.create(query, model) ;
-;boolean result = qexec.execAsk() ;
-
-(comment defn load-jena-model-from-str-and-out
-  [data-input query]
-  (load-jena-model-and-out2 (ByteArrayInputStream. (.getBytes data-input)) query))
 
 (defn get-subscribers
   ([] @listener))
@@ -97,41 +69,36 @@
 (defmethod  push-event String [req]
   (swap! events conj req))
 
-(defn query-model
-  [model query]
-  (if (not (nil? query))
-    (let* [qex (QueryExecutionFactory/create (QueryFactory/create query) model)]
-      (try
-        (.execAsk qex)
-        (finally (.close qex))))
-    false))
 
-(defn load-and-eval-jena-model [data-input query]
-  (let*
-    [m (ModelFactory/createDefaultModel)]
-    (.read m (ByteArrayInputStream. (.getBytes data-input)) nil "TTL")
-    (if (query-model m query)
-      (push-event data-input)
-      nil  )))
+
+(def content-types [["text/turtle" "TTL"] ["application/ld+json" "JSON-LD"]])
+
+(defn parse-content-type
+  [content-type-str]
+  (->
+    (some #(if (re-seq (re-pattern (% 0)) content-type-str) (% 1)) content-types)
+    ))
+
+
+(defn load-request [req]
+
+  (let [t (parse-content-type ((req :headers) "content-type"))]
+    ;(println t)
+    (j/read-stream-and-output-model (req :body) t "TTL" )))
 
 (defn perceive-data [req]
-  ;(reset! request req)
-  ;  (println "Request received")
-  ;(print req)
-  ;(println "parsed body")
-  (let [b (slurp (req :body))
-        options {:headers {"Content-Type" "text/turtle; charset=utf-8"}
-                 :body b}
-        url "http://localhost:3030/Test2/data"
-        {:keys [status headers body error] :as resp} @(http/post url options)
-        ]
-    (if (= status 200)
-      (println "Added:" (load-and-eval-jena-model b @listener)))
-    {:status (if status status 500)
-     :headers {"Context-Type" "text/turtle; charset=utf-8"}}
-    ;(assoc resp :status 200)
- ;{:status  status :headers {"Content-Type" "text/turtle; charset=utf-8"}      :body    res}
-    ))
+  (let [out-body (load-request req)
+        options {:headers {"Content-Type"  "text/turtle; charset=utf-8"
+                           "Authorization" (config :kb-authorization)}
+
+                 :body    out-body}]
+    (let [{:keys [status headers body error] :as resp} @(http/post (config :url-kb) options)]
+      (clojure.pprint/pprint resp)
+      (if (= status 200) (println "Added:" (j/load-and-eval-jena-model out-body @listener #(push-event out-body))))
+      {:status  status
+       :headers {"content-type"     (headers :content-type)
+                 "content-encoding" (headers :content-encoding)}
+       :body    body})))
 
 (defonce airport-data (atom {}))
 
@@ -163,15 +130,15 @@
 
 (defn -main [& [port]]
   (let [port (Integer. (or port (env :port) 8087))]
-    (println "starting")
+    (println "starting on port:" port)
     ; (reset! airport-data (air/load-flights))
     ;; The #' is useful when you want to hot-reload code
     ;; You may want to take a look: https://github.com/clojure/tools.namespace
     ;; and http://http-kit.org/migration.html#reload
 
     (let [handler (reload/wrap-reload #'all-routes)]
-      (run-server handler {:port port})
-      ;(reset! server (run-server handler {:port port :join? false}))
+      ;(run-server handler {:port port})
+      (reset! server (run-server handler {:port port}))
       )))
 
 
