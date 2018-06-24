@@ -27,6 +27,8 @@
 
 (defonce events (atom clojure.lang.PersistentQueue/EMPTY))
 
+(defonce tst-val (atom {}))
+
 (defn get-subscribers
   ([] @listener))
 
@@ -71,33 +73,42 @@
 
 
 
-(def content-types [["text/turtle" "TTL"] ["application/ld+json" "JSON-LD"]])
+(def content-types [["text/turtle" "text/turtle" "TTL"] ["application/ld.json" "application/ld+json" "JSON-LD"]])
 
 (defn parse-content-type
   [content-type-str]
   (->
-    (some #(if (re-seq (re-pattern (% 0)) content-type-str) (% 1)) content-types)
+    (some #(if (re-seq (re-pattern (% 0)) content-type-str) (% 2)) content-types)
+    ))
+
+(defn get-format-from-request [req]
+  (parse-content-type ((req :headers) "content-type"))
+  )
+
+(defn load-request [req]
+  (let [t (get-format-from-request req)]
+    (j/read-stream-and-output-model (req :body) t "TTL" )
     ))
 
 
-(defn load-request [req]
-
-  (let [t (parse-content-type ((req :headers) "content-type"))]
-    ;(println t)
-    (j/read-stream-and-output-model (req :body) t "TTL" )))
 
 (defn perceive-data [req]
+  ;(reset! tst-val req)
   (let [out-body (load-request req)
         options {:headers {"Content-Type"  "text/turtle; charset=utf-8"
                            "Authorization" (config :kb-authorization)}
-
                  :body    out-body}]
+    ;(clojure.pprint/pprint options)
     (let [{:keys [status headers body error] :as resp} @(http/post (config :url-kb) options)]
-      (clojure.pprint/pprint resp)
-      (if (= status 200) (println "Added:" (j/load-and-eval-jena-model out-body @listener #(push-event out-body))))
+      ;(clojure.pprint/pprint resp)
+      (if (= status 200)
+        (->> (j/load-and-eval-jena-model out-body @listener #(push-event out-body))
+             (println "Added:")
+             ))
       {:status  status
        :headers {"content-type"     (headers :content-type)
-                 "content-encoding" (headers :content-encoding)}
+                 ;"content-encoding" (headers :content-encoding)
+                 }
        :body    body})))
 
 (defonce airport-data (atom {}))

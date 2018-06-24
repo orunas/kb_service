@@ -30,6 +30,7 @@
   (let*
     [m (ModelFactory/createDefaultModel)
      sr (StringWriter. )]
+    ; (println "input-format" input-format)
     (.read m data-input-stream nil input-format)
     (.write m sr output-format)
     (.toString sr)))
