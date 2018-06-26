@@ -8,7 +8,9 @@
             [kb-service.airport-data :as air]
             [kb-service.jena :as j]
             [clojure.data.json :as json]
+            [kb-service.event :as e]
             [environ.core :refer [env]]
+
     ;[compojure.handler :as ch]
             )
   (import [org.apache.jena.rdf.model Model ModelFactory ResourceFactory]
@@ -25,7 +27,7 @@
              :kb-authorization "Basic ZWE6am9wbDE="
              })
 
-(defonce events (atom clojure.lang.PersistentQueue/EMPTY))
+
 
 (defonce tst-val (atom {}))
 
@@ -44,34 +46,6 @@
     (post-subscribers req)
     {:status 200
      :body (get-subscribers)}))
-
-(defn get-events []
-  (seq @events))
-
-(defn get-events-w [request]
-  {:status 200
-   :body   (str (get-events))})
-
-(defn peek-event []
-  (if-let [val (peek @events)]
-    (do
-      (swap! events pop)
-      val)))
-
-(defn peek-event-w [request]
-  {:status 200
-   :headers {"Context-Type" "text/turtle; charset=utf-8"}
-   :body (peek-event)})
-
-(defmulti push-event class)
-
-(defmethod push-event java.io.InputStream [req]
-  (if-let [b (req :body)]
-    (push-event (slurp b))))
-(defmethod  push-event String [req]
-  (swap! events conj req))
-
-
 
 (def content-types [["text/turtle" "text/turtle" "TTL"] ["application/ld.json" "application/ld+json" "JSON-LD"]])
 
@@ -102,7 +76,7 @@
     (let [{:keys [status headers body error] :as resp} @(http/post (config :url-kb) options)]
       ;(clojure.pprint/pprint resp)
       (if (= status 200)
-        (->> (j/load-and-eval-jena-model out-body @listener #(push-event out-body))
+        (->> (j/load-and-eval-jena-model out-body @listener #(e/push-event out-body))
              (println "Added:")
              ))
       {:status  status
